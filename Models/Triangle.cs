@@ -25,5 +25,34 @@ class Program
     Console.WriteLine("Your inputs for the triangle is " + UserSideOne + " and " + UserSideTwo + " and " + UserSideThree);
     int result = UserSideOne + UserSideTwo + UserSideThree;
     Console.WriteLine(result);
+
+    if (UserSideOne > 0)
+    {
+      if (UserSideOne == UserSideTwo && UserSideTwo == UserSideThree)
+      {
+        string quote = "You've inputted the dimensions of an equilateral triangle";
+        Console.WriteLine(quote);
+      }
+      else if (UserSideOne != UserSideTwo && UserSideTwo != UserSideThree && UserSideOne != UserSideThree)
+      {
+        string quote = "You've inputted the dimensions of a scalene triangle";
+        Console.WriteLine(quote);
+      }
+      else if (UserSideOne == UserSideTwo && UserSideTwo != UserSideThree)
+      {
+        string quote = "You've inputted the dimensions of an isoleces triangle";
+        Console.WriteLine(quote);
+      }
+      else if (UserSideOne != UserSideTwo && UserSideTwo == UserSideThree)
+      {
+        string quote = "You've inputted the dimensions of a triangle that is also an isoleces triangle";
+        Console.WriteLine(quote);
+      }
+      else if (UserSideOne == UserSideThree && UserSideTwo != UserSideThree)
+      {
+        string quote = "You've inputted the dimensions of a triangle that is alsooooo an isoleces triangle!!!";
+        Console.WriteLine(quote);
+      }
+    }
   }
 }
