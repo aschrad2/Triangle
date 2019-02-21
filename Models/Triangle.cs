@@ -1,31 +1,37 @@
 using System;
+using System.Collections.Generic;
 
-class Triangle
+public class Triangle
 {
-  private int SideOne;
-  private int SideTwo;
-  private int SideThree;
+  public int SideOne;
+  public int SideTwo;
+  public int SideThree;
+}
 
-  public Triangle(int sideOne, int sideTwo, int sideThree)
+class Program
+{
+  public static void Main()
   {
-    SideOne = sideOne;
-    SideTwo = sideTwo;
-    SideThree = sideThree;
-  }
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("What is first side?");
+    int UserSideOne = int.Parse(Console.ReadLine());
+    // string UserSideOne = Console.ReadLine();
+    Console.WriteLine("What is the second side?");
+    string UserSideTwo = Console.ReadLine();
+    Console.WriteLine("What is the third side?");
+    string UserSideThree = Console.ReadLine();
+    Console.WriteLine("Your inputs for the triangle is " + UserSideOne + " and " + UserSideTwo + " and " + UserSideThree);
+    // int result = int.Parse(UserSideOne) + int.Parse(UserSideTwo) + int.Parse(UserSideThree);
+    // Console.WriteLine(result);
 
-  public int GetSideOne()
-  {
-    return SideOne;
-  }
+    // if (UserSideOne) {
+      // if (UserSideOne == UserSideTwo && UserSideTwo == UserSideThree) {
+        // string quote = "It is an equilateral triangle";
+      // }
 
-  public int GetSideTwo()
-  {
-    return SideTwo;
-  }
+    // Console.WriteLine(quote);
 
-  public int GetSideThree()
-  {
-    return SideThree;
-  }
 
+    // }
+  }
 }

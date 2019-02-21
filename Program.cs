@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+
 
 namespace Dealership {
 
@@ -7,13 +7,12 @@ namespace Dealership {
   {
     public static void Main()
     {
-      Triangle equilateral = new Triangle(3, 3, 3);
+      Triangle firstSide = new Triangle(3, 3, 3);
       Triangle isoleces = new Triangle(2, 2, 1);
       Triangle scalene = new Triangle(1, 2, 3);
 
-      List<Triangle> Triangle = new List<Triangle>() {equilateral, isoleces, scalene}
-
-      Console.WriteLine("")
+      List<Triangle> Triangle = new List<Triangle>(0);
+      // Console.WriteLine("Enter the triangles first side");
     }
   }
 }
